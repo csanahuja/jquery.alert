@@ -1,5 +1,5 @@
 # jquery.alert
-Jquery Alert without Boostrap
+Jquery Alert without Bootstrap
 
 ## Example
 ![Example](https://en.shurimages.com/u/hT54dkL8pL.png)
