@@ -6,7 +6,8 @@ Jquery Alert without Boostrap
 
 ## Usage
 
-``` $('#trigger').click(function(){
+``` 
+ $('#trigger').click(function(){
 	$.createAlert({
 		attachAfter: '#trigger',
 		title: 'You have reached the limit or your quota!',
@@ -15,7 +16,7 @@ Jquery Alert without Boostrap
 		callback: null
 	});
 	$.showAlert();
-});
+ });
 ```
 		
 > **#trigger** will be the element that will show the alert when clicked.
