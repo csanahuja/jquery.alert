@@ -15,8 +15,9 @@
 			"<div id='alert_dialog'>"+
 				"<div id='alert_title'></div>"+
 				"<div id='alert_actions'>"+
-					"<button id='alert_confirm'></div>"+
+					"<button id='alert_confirm'></button>"+
 				"</div>"+
+				"<div id='alert_close'></div>"+
 			"</div>"
 		);
 		
@@ -28,6 +29,8 @@
 			$('#alert_confirm').bind("click", options.callback);
 			
 		$('#alert_confirm').click($.hideAlert);
+		$('#alert_close').click($.hideAlert);
+		
 	};
 	$.showAlert = function(){
 		$('#alert_backdrop').slideDown();
