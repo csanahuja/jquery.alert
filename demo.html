@@ -6,21 +6,24 @@
     <link href="alert.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="alert.jquery.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   </head>
   <body>
     <button id="trigger">DEMO</button>
     <script type="text/javascript">
       $('#trigger').click(function(){
-		$.createAlert({
-			attachAfter: '#trigger',
-			title: 'You have reached the limit or your quota!',
-			confirmText: 'Accept',
-			confirmStyle: 'blue',
-			callback: null
-		});
-		$.showAlert();
-	});			
+    $.createAlert({
+      attachAfter: '#trigger',
+      title: 'You have reached the limit or your quota!',
+      template: `
+        <p> This a template to provide some info to the customer <p>
+        <p> <strong> Alert: </strong> Read it carefully </p>`,
+      confirmText: 'Accept',
+      confirmStyle: 'blue',
+      callback: null
+    });
+    $.showAlert();
+  });     
     </script>
   </body>
 </html>

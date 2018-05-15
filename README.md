@@ -11,6 +11,9 @@ Jquery Alert without Bootstrap
 	$.createAlert({
 		attachAfter: '#trigger',
 		title: 'You have reached the limit or your quota!',
+		template: `
+			<p> This a template to provide some info to the customer <p>
+			<p> <strong> Alert: </strong> Read it carefully </p>`,
 		confirmText: 'Accept',
 		confirmStyle: 'blue',
 		callback: null

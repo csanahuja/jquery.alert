@@ -14,6 +14,7 @@
 			"<div id='alert_backdrop'></div>"+
 			"<div id='alert_dialog'>"+
 				"<div id='alert_title'></div>"+
+				"<div id='alert_template'></div>"+
 				"<div id='alert_actions'>"+
 					"<button id='alert_confirm'></button>"+
 				"</div>"+
@@ -22,6 +23,7 @@
 		);
 		
 		$('#alert_title').html(options.title);
+		$('#alert_template').html(options.template);
 		$('#alert_confirm').html(options.confirmText);
 		$('#alert_confirm').addClass(options.confirmStyle);
 		
